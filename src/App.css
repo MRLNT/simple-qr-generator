@@ -29,4 +29,59 @@ body{
 }
 .container .qr-code-box{
     height: 200px;
+    width:90%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: all .2s;
+}
+
+.container .qr-code-box .qr-code{
+  height: 150px;
+  width: 150px;
+}
+
+.container .qr-code-box .qr-code > img{
+  height: 100%;
+  width: 100%;
+}
+.container .userInput{
+  all: unset;
+  height: 50px;
+  width: 285px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  position: relative;
+  top: -140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  transition: all .2s;
+}
+
+.container .generate-btn{
+  all: unset;
+  height: 50px;
+  width: 300px;
+  background: #66C7D0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .2s;
 }
